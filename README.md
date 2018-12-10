@@ -1,10 +1,10 @@
 
-# Stanford CoreNLP
+# Stanford CoreNLP along with Probability Matrix NLP
 
 ## Running Example of Stanford CoreNLP in C#
 
-A NLP(Natural Language Processing) engine build by Stanford University USA.
-
+CoreNLP(Natural Language Processing) engine was built by Stanford University USA.
+Probability Matrix NLP was coded by us.
 
 ## Table of Contents
 - [Stanford CoreNLP](#stanford-corenlp)
@@ -13,6 +13,7 @@ A NLP(Natural Language Processing) engine build by Stanford University USA.
     - [Overview](#overview)
     - [Development](#development)
     - [Install Dependencies](#install-dependencies)
+	-[Outcomes and How to call API](#outcomes-and-how-to-call-api)
 
 
 
@@ -38,3 +39,19 @@ The following packages are needed to be installed by NuGet Package Manager:
 Besides, you need the download and extract the follow jar file in your application in correct path
 
 stanford-english-corenlp-2018-10-05-models.jar
+
+## Outcomes and How to call API
+
+https://.....ip..../api/values/query
+example:
+call:-
+https://localhost:9000/api/values/can you create a task for me
+response:-
+{
+"intent" : "create" ,
+"noun" : "task" ,
+"action_prob" : "1",
+"noun_prob" : "1"
+}
+
+
