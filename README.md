@@ -43,10 +43,15 @@ stanford-english-corenlp-2018-10-05-models.jar
 ## Outcomes and How to call API
 
 https://.....ip..../api/values/query
+
 example:
-call:-
+
+API call:-
+
 https://localhost:9000/api/values/can you create a task for me
+
 response:-
+
 {
 "intent" : "create" ,
 "noun" : "task" ,
